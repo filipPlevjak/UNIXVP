@@ -1,4 +1,5 @@
 #project euler problemy: 2,25,7,10
+#projecteuler.net/archives
 
 fibo = [0,1]
 
