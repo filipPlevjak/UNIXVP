@@ -2,6 +2,16 @@
 #projecteuler.net/archives
 fibo = [0,1]
 
+
+fobi= {0: 0, 1: 1}
+
+
+def mfobi(n):
+	if n not in fobi:
+		fobi[n] = mfobi(n-1) + mfobi(n-2)
+	return fobi[n]
+
+
 def fib(n):
 	a,b=0,1
 	if n>1:
@@ -17,16 +27,12 @@ def rfib(n):
 	else: 
 		return rfib(n-1)+rfib(n-2)
 		
-		
-fobi= {0: 0, 1: 1}
-
-
-def mfobi(n):
-	if n not in fobi:
-		fobi[n] = mfobi(n-1) + mfobi(n-2)
-	return fobi[n]
 z=[0,1]
 def mfib(n):
 	if n>len(z)-1:
 		z.append(mfib(n-1)+mfib(n-2))
 		return z[n]
+
+	
+
+dalsi = lambda x:3*x+1 if x%2 else x//2
