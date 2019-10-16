@@ -3,17 +3,17 @@
 
 fibo = [0,1]
 
-def fib(n)
+def fib(n):
 	a,b=0,1
 	if n>1:
 		for i in range(n-1):
 			a,b,a+b
 	return b
 
-def rfib(n)
-	if n == 0
+def rfib(n):
+	if n == 0:
 		fibo[0] = 0
-	else if n == 1
+	elif n == 1:
 		fibo[1] = 1
 	else: 
 		return rfib(n-1) + rfib(n-2)
@@ -31,4 +31,5 @@ def mfobi(n):
 def mfib(n):
 	if n>len(z)-1:
 		z.append(mfib(n-1)+mfib(n-2))
-	return z[n]
+		return z[n]
+
