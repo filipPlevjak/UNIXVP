@@ -1,6 +1,5 @@
 #project euler problemy: 2,25,7,10
 #projecteuler.net/archives
-
 fibo = [0,1]
 
 def fib(n):
@@ -12,12 +11,11 @@ def fib(n):
 
 def rfib(n):
 	if n == 0:
-		fibo[0] = 0
+		return 0
 	elif n == 1:
-		fibo[1] = 1
+		return 1
 	else: 
-		return rfib(n-1) + rfib(n-2)
-		
+		return rfib(n-1)+rfib(n-2)
 		
 		
 fobi= {0: 0, 1: 1}
@@ -32,4 +30,3 @@ def mfib(n):
 	if n>len(z)-1:
 		z.append(mfib(n-1)+mfib(n-2))
 		return z[n]
-
