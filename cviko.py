@@ -25,7 +25,7 @@ def mfobi(n):
 	if n not in fobi:
 		fobi[n] = mfobi(n-1) + mfobi(n-2)
 	return fobi[n]
-
+z=[0,1]
 def mfib(n):
 	if n>len(z)-1:
 		z.append(mfib(n-1)+mfib(n-2))
