@@ -1,0 +1,13 @@
+from functools import reduce
+
+
+def problem8(cislo,n):
+	
+	sc = str(cislo)
+	ntice = [sc[i:i+n] for i in range(0,len(sc) - n +1)] 
+	
+	nt=[j for j in ntice if "0" not in j]  
+	
+	suciny = [reduce(lambda x,y:int(x)*int(y), [i for i in nt[j]]) for j in range(0, len(nt))]
+	
+	return max(suciny)
